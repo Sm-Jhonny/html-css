@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio CSS - IDs, Classes, Pseudo-classes e Pseudo-elementos</title>
+    <style>
+        /* ESTILOS BASE (já prontos) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        section {
+            background: white;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .explicacao {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        /* SEU DESAFIO COMEÇA AQUI - COMPLETE O CSS ABAIXO */
+        
+        /* 1. IDs - Estilize o elemento com ID "destaque" */
+        #destaque {
+            /* SUA SOLUÇÃO: 
+            - Cor de fundo: #ffeaa7
+            - Padding: 15px
+            - Borda: 2px sólida #fdcb6e
+            - Raio da borda: 8px
+            */
+            
+            background-color: #ffeaa7;
+            padding: 15px;
+            border: 2px solid #fdcb6e;
+            border-radius: 8px;
+
+        }
+        
+        /* 2. Classes - Estilize os elementos com a classe "botao" */
+        .botao {
+            /* SUA SOLUÇÃO:
+            - Cor de fundo: #3498db
+            - Cor do texto: branco
+            - Padding: 12px 24px
+            - Borda: nenhuma
+            - Raio da borda: 4px
+            - cursor: pointer
+            - transição: background-color 0.3s
+            */
+
+            background-color: #3498db;
+            color: white;
+            padding:12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+
+
+        }
+        
+        /* 3. Pseudo-classes - Estilize os estados dos botões */
+        .botao:hover {
+            /* SUA SOLUÇÃO: 
+            - Cor de fundo: #2980b9
+            */
+
+            background-color: #2980b9;
+
+        }
+        
+        .botao:active {
+            /* SUA SOLUÇÃO:
+            - Cor de fundo: #1c6ea4
+            - Transformação: scale(0.98)
+            */
+
+            background-color: #1c6ea4;
+            transform: scale(0.98);
+
+        }
+        
+        /* 4. Pseudo-elementos - Estilize a primeira letra do parágrafo com ID "paragrafo-especial" */
+        #paragrafo-especial::first-letter {
+            /* SUA SOLUÇÃO:
+            - Tamanho da fonte: 2.5em
+            - Peso da fonte: bold
+            - Cor: #e74c3c
+            */
+
+            font-weight: bold;
+            font-size: 2.5em;
+            color: #e74c3c;
+
+        }
+        
+        /* 5. Pseudo-elementos - Adicione conteúdo antes e depois dos links com a classe "link-especial" */
+        .link-especial::before {
+            /* SUA SOLUÇÃO:
+            - Conteúdo: "➡ "
+            - Cor: #9b59b6
+            */
+
+            content: "➡ ";
+            color: #9b59b6;
+
+
+        }
+        
+        .link-especial::after {
+            /* SUA SOLUÇÃO:
+            - Conteúdo: " ⬅"
+            - Cor: #9b59b6
+            */
+
+            content: " ⬅";
+            color: #9b59b6;
+        }
+        
+        /* 6. Pseudo-classe nth-child - Estilize os itens pares da lista */
+        #lista-ordenada li:nth-child(even) {
+            /* SUA SOLUÇÃO:
+            - Cor de fundo: #dfe6e9
+            */
+
+            background-color: #dfe6e9;
+
+        }
+        
+        /* 7. Pseudo-classe focus - Estilize o campo de entrada quando em foco */
+        #campo-foco:focus {
+            /* SUA SOLUÇÃO:
+            - Cor de fundo: #fff8e1
+            - Borda: 2px sólida #fdcb6e
+            - Sombra: 0 0 8px rgba(253, 203, 110, 0.5)
+            */
+
+            background-color: #Fff8e1;
+            border: 2px solid #fdcb6e;
+            box-shadow: 0 0 8px rgba(253, 203, 110, 0.5);
+
+        }
+        
+        /* 8. Pseudo-elemento selection - Personalize a seleção de texto */
+        ::selection {
+            /* SUA SOLUÇÃO:
+            - Cor de fundo: #fd79a8
+            - Cor do texto: white
+            */
+
+            background-color: #fd79a8;
+            color: white;
+
+        }
+        
+
+        .intem-lista{
+            transition: all 0.3s ease;
+        }
+
+
+        /* 9. Combine classe e pseudo-classe - Estilize os itens da lista quando o mouse passa por cima */
+        .item-lista:hover {
+            /* SUA SOLUÇÃO:
+            - Cor de fundo: #81ecec
+            - Padding à esquerda: 20px
+            - Transição: all 0.3s ease
+            */
+
+            background-color: #81ecec;
+            padding-left: 20px;
+        
+
+        }
+        
+        /* 10. Crie um efeito de tooltip para elementos com a classe "tooltip" */
+        .tooltip:hover::after {
+            /* SUA SOLUÇÃO:
+            - Conteúdo: "Isso é uma dica!"
+            - Posição: absoluta
+            - Fundo: #2d3436
+            - Cor do texto: branco
+            - Padding: 5px 10px
+            - Raio da borda: 4px
+            - Top: 100%
+            - Left: 50%
+            - Transformação: translateX(-50%)
+            - Espaço para o texto: nowrap
+            */
+
+
+            content: "Isso é uma dica!";
+            position: absolute;
+            background-color: #2d3436;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Desafio: IDs, Classes, Pseudo-classes e Pseudo-elementos</h1>
+        <p>Complete o CSS para implementar os estilos solicitados</p>
+    </header>
+    
+    <section class="explicacao">
+        <h2>Instruções do Desafio</h2>
+        <p>No código CSS acima, complete cada uma das seções marcadas com "SUA SOLUÇÃO" seguindo as instruções fornecidas.</p>
+        <p>Use comentários no CSS para documentar seu código se necessário.</p>
+    </section>
+    
+    <section id="secao-ids">
+        <h2>1. Estilizando com IDs</h2>
+        <p id="destaque">Este parágrafo tem o ID "destaque" e deve ser estilizado conforme as instruções no CSS.</p>
+    </section>
+    
+    <section id="secao-classes">
+        <h2>2. Estilizando com Classes</h2>
+        <button class="botao">Botão 1</button>
+        <button class="botao">Botão 2</button>
+        <button class="botao">Botão 3</button>
+    </section>
+    
+    <section id="secao-pseudo-elementos">
+        <h2>3. Pseudo-elementos</h2>
+        <p id="paragrafo-especial">Este parágrafo tem um ID especial. A primeira letra deve ser estilizada de forma diferente usando um pseudo-elemento.</p>
+        
+        <p>Links com pseudo-elementos: 
+            <a href="#" class="link-especial">Link 1</a> |
+            <a href="#" class="link-especial">Link 2</a> |
+            <a href="#" class="link-especial">Link 3</a>
+        </p>
+    </section>
+    
+    <section id="secao-pseudo-classes">
+        <h2>4. Pseudo-classes</h2>
+        
+        <h3>Lista com itens pares destacados</h3>
+        <ol id="lista-ordenada">
+            <li class="item-lista">Item 1</li>
+            <li class="item-lista">Item 2</li>
+            <li class="item-lista">Item 3</li>
+            <li class="item-lista">Item 4</li>
+            <li class="item-lista">Item 5</li>
+        </ol>
+        
+        <h3>Campo com efeito de foco</h3>
+        <input type="text" id="campo-foco" placeholder="Clique aqui para testar o foco">
+        
+        <h3>Tooltip com pseudo-elemento</h3>
+        <p>Passe o mouse sobre este <span class="tooltip" style="position: relative;">texto</span> para ver uma dica.</p>
+    </section>
+    
+    <section id="secao-teste">
+        <h2>5. Teste de Seleção de Texto</h2>
+        <p>Selecione este texto para ver o efeito personalizado de seleção. O pseudo-elemento ::selection permite estilizar o texto quando ele é selecionado pelo usuário.</p>
+    </section>
+</body>
+</html>

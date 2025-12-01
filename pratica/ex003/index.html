@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Responsitividade</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .box{
+            background-color: white;
+        }
+        @media (min-width: 768px) {
+            body{
+                background: blue;
+            }
+            .container{
+                flex-direction:row;
+                justify-content: space-between;
+            }
+            .box{
+                flex: 1;
+            }
+        }
+        @media (max-width: 767px) {
+            body{
+                background: red;
+            }
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <h1>Teste responsatividade</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolores culpa ducimus quasi laborum vel aliquid soluta id porro vitae nobis. Accusantium voluptate maxime, incidunt rerum hic voluptatibus veritatis reprehenderit.</p>
+        </div>
+        
+
+        <div class="box">
+            <h2>Teste</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, enim! Ducimus veritatis expedita necessitatibus porro dolorem nobis dolores, at distinctio, dicta quos tempore, quidem doloremque laborum nemo! Labore, tempora saepe.</p>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

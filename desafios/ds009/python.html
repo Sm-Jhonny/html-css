@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Python</title>
+    <link rel="shortcut icon" href="pictures/python-icon.png" type="image/png">
+    <link rel="stylesheet" href="backpage.css">
+</head>
+
+<style>
+       body {
+        height: 100%;
+        margin: 0;
+        background: linear-gradient(135deg, #2A3340, #2E97F2);
+        background-attachment: fixed; /* Isso faz o gradiente cobrir toda a página */
+        background-size: cover;
+        }
+        div{
+            max-width: 800px;
+            width: 600px;
+            margin: auto;
+            padding: 15px;
+            border: 15px solid #F2A516;
+            border-radius: 20px;
+            background-color: #2A3340;   
+        }
+        .title{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 10px;
+            border: 5px solid #F2A516;
+            background-color: #2A3340;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .video {
+            display: block;       /* transforma em bloco (pra poder centralizar) */
+            margin: 0 auto 20px;  /* centraliza com auto */
+            width: 100%;          /* ocupa toda a largura da div */
+            max-width: 560px;     /* não passa do tamanho padrão */
+            height: 315px;        /* mantém proporção */
+            border: 5px solid #F2A516;
+            border-radius: 10px;
+            box-shadow: 6px 12px 12px rgba(0, 0, 0, 0.5);
+        }
+        .morevideos{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            width: 150px;
+            margin: auto;
+            border-radius: 10px;
+            border: 5px solid #F2A516;
+            background-color: #2A3340;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: 0.3;
+        }
+        .morevideos:hover{
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            border-color: #F2A516;
+        }
+        .link{
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .link img{
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .link img:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+<body>
+    
+    <div>
+        <h1 class="title">CURSO PYTHON</h1>
+
+        <iframe class="video" src="https://www.youtube.com/embed/S9uPNppGsGo?si=FQGe2t8YmXZSuaEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <a class="morevideos" target="_blank" href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">MAIS VIDEOS</a>
+
+        <a class="link" href="index.html"><img src="pictures/voltarpy.png" alt=""></a>
+    </div>
+   
+</body>
+</html>
